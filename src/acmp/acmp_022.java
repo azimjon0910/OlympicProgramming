@@ -28,7 +28,7 @@ package acmp;
 
 import java.util.Scanner;
 
-public class acmp_22 {
+public class acmp_022 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 

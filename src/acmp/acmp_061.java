@@ -17,35 +17,55 @@ package acmp;
 |--|--------------------|--------------------|
 |--|--------------------|--------------------|
 |  |26 17               |1                   |
-|  | 13 15              |                    |
-|1 | 19 11              |                    |
-|  | 14 16              |                    |
+|  |13 15               |                    |
+|1 |19 11               |                    |
+|  |14 16               |                    |
 |--|--------------------|--------------------|
 |  |14 15               |2                   |
-|  | 17 18              |                    |
-|2 | 20 20              |                    |
-|  | 15 17              |                    |
+|  |17 18               |                    |
+|2 |20 20               |                    |
+|  |15 17               |                    |
 |--|--------------------|--------------------|
 |  |15 16               |DRAW                |
-|  | 18 17              |                    |
-|3 | 10 12              |                    |
-|  | 14 12              |                    |
+|  |18 17               |                    |
+|3 |10 12               |                    |
+|  |14 12               |                    |
 |--|--------------------|--------------------|
 ----------------------------------------------
 
 
 
 Решение.
+s1 = a1+a2+a3+a4
+s2 = b1+b2+b3+b4
+s1 > b1 -> 1
+s1 < b1 -> 2
+s1 == b1 -> DRAW
 
 */
 
 
 import java.util.Scanner;
 
-public class acmp_61 {
+public class acmp_061 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-
-		System.out.print("");
+		int a1 = in.nextInt();
+		int b1 = in.nextInt();
+		int a2 = in.nextInt();
+		int b2 = in.nextInt();
+		int a3 = in.nextInt();
+		int b3 = in.nextInt();
+		int a4 = in.nextInt();
+		int b4 = in.nextInt();
+		int s1 = a1+a2+a3+a4;
+		int s2 = b1+b2+b3+b4;
+		if (s1 > s2) {
+			System.out.print(1);
+		} else if (s1 < s2) {
+			System.out.print(2);
+		} else {
+			System.out.println("DRAW");
+		}
 	}
 }

@@ -33,7 +33,7 @@ N! = 1 * 2 * 3 * … * (N-1) * N, причем 0! = 1.
 
 import java.util.Scanner;
 
-public class acmp_18 {
+public class acmp_018 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 

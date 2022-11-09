@@ -29,7 +29,7 @@ package acmp;
 
 import java.util.Scanner;
 
-public class acmp_4 {
+public class acmp_004 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
