@@ -28,12 +28,13 @@ package acmp;
 
 
 Решение.
-2 -> 1
-3 -> 3
-4 -> 2
-5 -> 5
-6 -> 3
-7 -> 7
+n=1 -> 0
+n=2 -> 1
+n=3 -> 3
+n=4 -> 2
+n=5 -> 5
+n=6 -> 3
+n=7 -> 7
 ...
 n -> если n % 2 == 0, то n/2, иначе n.
 
@@ -48,7 +49,9 @@ public class acmp_539 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        if (n % 2 == 0) {
+        if (n == 1) {
+            System.out.print(0);
+        } else if (n % 2 == 0) {
             System.out.print(n / 2);
         } else {
             System.out.print(n);
